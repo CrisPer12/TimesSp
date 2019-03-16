@@ -16,6 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".sp" />
+        <activity android:name=".palmeiras" />
+        <activity android:name=".santos" />
+        <activity android:name=".corin"></activity>
     </application>
 
 </manifest>
