@@ -5,43 +5,64 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backarena"
+    android:clipToPadding="false"
+    android:padding="0dp"
+    android:theme="@android:style/Animation"
     tools:context=".corin">
 
     <Button
-        android:id="@+id/button3"
-        android:layout_width="181dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="36dp"
-        android:background="@android:color/background_dark"
-        android:text="Videos"
-        android:textColor="@android:color/background_light"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="181dp"
-        android:layout_height="48dp"
-        android:background="@android:color/black"
-        android:text="Noticias"
-        android:textColor="@android:color/background_light"
-        tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="357dp" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="181dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="273dp"
+        android:id="@+id/hinoCor"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginRight="91dp"
         android:layout_marginBottom="25dp"
-        android:background="@android:color/black"
+        android:background="?android:attr/textColorHighlight"
+        android:padding="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="@android:dimen/app_icon_size"
+        android:paddingBottom="10dp"
+        android:password="false"
         android:text="Tocar Hino"
         android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toTopOf="@+id/button5"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button13"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="34dp"
+        android:background="?android:attr/textColorHighlight"
+        android:text="Noticias"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/hinoCor"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="117dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="351dp"
+        android:background="?android:attr/textColorHighlight"
+        android:text="Videos"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button13"
+        tools:layout_editor_absoluteX="134dp"
+        tools:ignore="MissingConstraints" />
+
 </android.support.constraint.ConstraintLayout>
